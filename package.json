@@ -1,0 +1,38 @@
+{
+  "name": "dsh-wx-miniprogram",
+  "version": "1.0.0",
+  "description": "5-minute WeChat MiniProgram generator from natural language. Pure Node.js + TypeScript, zero native deps, Win7-friendly. By DeepSeek Harness.",
+  "license": "MIT",
+  "author": "DeepSeek Harness",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "mp": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli/index.js",
+    "demo": "node dist/e2e/demo.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "wechat",
+    "miniprogram",
+    "generator",
+    "low-code",
+    "scaffold",
+    "dsh"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.5"
+  }
+}
